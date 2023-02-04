@@ -10,6 +10,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       '@global': path.resolve(__dirname, './src/global'),
       '@types': path.resolve(__dirname, './src/global/types'),
+      '@pages': path.resolve(__dirname, './src/global/pages'),
       '@styles': path.resolve(__dirname, './src/global/styles'),
     },
   },
