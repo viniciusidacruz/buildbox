@@ -13,6 +13,10 @@ export default defineConfig({
       '@pages': path.resolve(__dirname, './src/global/pages'),
       '@styles': path.resolve(__dirname, './src/global/styles'),
       '@config': path.resolve(__dirname, './src/global/config'),
+      '@components': path.resolve(
+        __dirname,
+        './src/global/components'
+      ),
     },
   },
 });

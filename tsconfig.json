@@ -22,6 +22,7 @@
       "@pages/*": ["./src/global/pages/*"],
       "@styles/*": ["./src/global/styles/*"],
       "@config/*": ["./src/global/config/*"],
+      "@components/*": ["./src/global/components/*"],
     }
   },
   "include": ["src"],
