@@ -1,9 +1,18 @@
-import { forwardRef, TextareaHTMLAttributes } from 'react';
+import { forwardRef, Fragment } from 'react';
 
-import { TextArea } from './styles';
+import * as Styles from './styles';
+import { IComponentParams } from './types';
 
 export const TextAreaComponent = forwardRef(
-  (props: TextareaHTMLAttributes<HTMLTextAreaElement>, ref?: any) => {
-    return <TextArea ref={ref} {...props} />;
+  (props: IComponentParams, ref?: any) => {
+    return (
+      <Fragment>
+        <Styles.TextArea ref={ref} {...props} />
+
+        {props.error && (
+          <Styles.Message>{props.message}</Styles.Message>
+        )}
+      </Fragment>
+    );
   }
 );
