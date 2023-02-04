@@ -6,6 +6,12 @@ export const Form = styled.form`
   padding: 1.6rem;
 `;
 
+export const Header = styled.header`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 export const Footer = styled.footer`
   width: 100%;
   display: flex;
