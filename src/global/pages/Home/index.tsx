@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 
-import { HeaderComponent } from '@components/index';
+import { HeaderComponent, FormComponent } from '@components/index';
+
 import { Container } from './styles';
 
 export function HomePage() {
@@ -9,7 +10,7 @@ export function HomePage() {
       <HeaderComponent />
 
       <Container>
-        <h1>Hello World</h1>
+        <FormComponent />
       </Container>
     </Fragment>
   );
