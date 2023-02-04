@@ -16,6 +16,7 @@ export function FormComponent() {
     isSubmitting,
     handleSubmit,
     handleSubmitForm,
+    handleClearAllFields,
   } = useSubmitForm();
 
   return (
@@ -51,7 +52,13 @@ export function FormComponent() {
       </Styles.Body>
 
       <Styles.Footer>
-        <ButtonComponent title="Descartar" variant="outline" />
+        <ButtonComponent
+          type="button"
+          title="Descartar"
+          variant="outline"
+          onClick={handleClearAllFields}
+        />
+
         <ButtonComponent
           type="submit"
           title="Publicar"
