@@ -3,7 +3,7 @@ import { TVariantsComponent } from './types';
 import { getVariantAndModifyStyles } from './utils';
 
 export const Button = styled.button<TVariantsComponent>`
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   padding: 1.6rem 2rem;
   border: none;
   font-size: 1.8rem;
