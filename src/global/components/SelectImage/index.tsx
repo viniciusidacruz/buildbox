@@ -1,14 +1,19 @@
-import * as Styles from './styles';
-import { IComponentParams } from './types';
+import { forwardRef, InputHTMLAttributes } from 'react';
 
-export function SelectImageComponent({
-  htmlFor,
-  ...restProps
-}: IComponentParams) {
-  return (
-    <Styles.SelectImage htmlFor={htmlFor}>
-      <Styles.Icon />
-      <Styles.Input type="file" accept="image/*" {...restProps} />
-    </Styles.SelectImage>
-  );
-}
+import * as Styles from './styles';
+
+export const SelectImageComponent = forwardRef(
+  (props: InputHTMLAttributes<HTMLInputElement>, ref: any) => {
+    return (
+      <Styles.SelectImage htmlFor="thumbnail">
+        <Styles.Icon />
+        <Styles.Input
+          type="file"
+          accept="image/*"
+          ref={ref}
+          {...props}
+        />
+      </Styles.SelectImage>
+    );
+  }
+);
