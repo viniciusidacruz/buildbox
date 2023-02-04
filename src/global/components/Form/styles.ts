@@ -15,6 +15,10 @@ export const Header = styled.header`
 export const Body = styled.div`
   margin-top: 1.6rem;
   margin-bottom: 2rem;
+
+  textarea {
+    margin-top: 1rem;
+  }
 `;
 
 export const Footer = styled.footer`
