@@ -12,6 +12,11 @@ export const Header = styled.header`
   justify-content: center;
 `;
 
+export const Body = styled.div`
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
+`;
+
 export const Footer = styled.footer`
   width: 100%;
   display: flex;

@@ -1,5 +1,6 @@
 import {
   ButtonComponent,
+  TextFieldComponent,
   SelectImageComponent,
 } from '@components/index';
 
@@ -15,6 +16,14 @@ export function FormComponent() {
           htmlFor="thumbnail"
         />
       </Styles.Header>
+
+      <Styles.Body>
+        <TextFieldComponent
+          name="name"
+          type="text"
+          placeholder="Digite seu nome"
+        />
+      </Styles.Body>
 
       <Styles.Footer>
         <ButtonComponent title="Descartar" variant="outline" />
