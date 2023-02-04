@@ -1,7 +1,10 @@
+import { ThemeProvider } from 'styled-components';
+import { THEME_DEFAULT_TEMPLATE } from '@styles/index';
+
 export default function App() {
   return (
-    <div>
+    <ThemeProvider theme={THEME_DEFAULT_TEMPLATE}>
       <h1>Hello Wolrd</h1>
-    </div>
+    </ThemeProvider>
   );
 }
