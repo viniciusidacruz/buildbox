@@ -14,3 +14,8 @@ export const TextField = styled.input`
     color: ${({ theme }) => theme.colors.gray['200']};
   }
 `;
+
+export const Message = styled.span`
+  color: red;
+  font-size: 1rem;
+`;
