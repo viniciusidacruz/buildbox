@@ -1,4 +1,4 @@
-import { forwardRef, InputHTMLAttributes, RefObject } from 'react';
+import { forwardRef, InputHTMLAttributes } from 'react';
 import { TextField } from './styles';
 
 export const TextFieldComponent = forwardRef(
