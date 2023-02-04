@@ -12,6 +12,7 @@ export default defineConfig({
       '@types': path.resolve(__dirname, './src/global/types'),
       '@pages': path.resolve(__dirname, './src/global/pages'),
       '@styles': path.resolve(__dirname, './src/global/styles'),
+      '@config': path.resolve(__dirname, './src/global/config'),
     },
   },
 });
