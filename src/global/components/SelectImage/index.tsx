@@ -5,6 +5,17 @@ import { IComponentParams } from './types';
 
 export const SelectImageComponent = forwardRef(
   (props: IComponentParams, ref: any) => {
+    if (props.thumbnailSource) {
+      return (
+        <Styles.Header>
+          <Styles.Thumbnail thumbnailSource={props.thumbnailSource} />
+          <Styles.IconTrash
+            onClick={() => props.onDeleteThumbnail()}
+          />
+        </Styles.Header>
+      );
+    }
+
     return (
       <Styles.SelectImage htmlFor={props.htmlFor}>
         <Styles.Icon />
