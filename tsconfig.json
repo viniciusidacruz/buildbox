@@ -23,6 +23,7 @@
       "@styles/*": ["./src/global/styles/*"],
       "@config/*": ["./src/global/config/*"],
       "@components/*": ["./src/global/components/*"],
+      "@services/*": ["./src/global/services/*"],
     }
   },
   "include": ["src"],
