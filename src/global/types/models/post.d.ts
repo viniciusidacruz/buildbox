@@ -2,5 +2,5 @@ export interface IPost {
   id: number;
   name: string;
   message: string;
-  thumbnail: File;
+  thumbnail: string;
 }
