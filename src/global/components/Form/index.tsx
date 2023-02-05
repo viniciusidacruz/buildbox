@@ -15,8 +15,11 @@ export function FormComponent() {
     register,
     isSubmitting,
     handleSubmit,
+    thumbnailUrl,
+    handleChangeFile,
     handleSubmitForm,
     handleClearAllFields,
+    handleDeleteThumbnail,
   } = useSubmitForm();
 
   return (
@@ -25,7 +28,9 @@ export function FormComponent() {
         <SelectImageComponent
           id="thumbnail"
           htmlFor="thumbnail"
-          {...register('thumbnail')}
+          onChange={handleChangeFile}
+          thumbnailSource={thumbnailUrl}
+          onDeleteThumbnail={() => handleDeleteThumbnail()}
         />
       </Styles.Header>
 
