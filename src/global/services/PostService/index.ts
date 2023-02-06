@@ -23,7 +23,20 @@ const getAllPosts = async (): Promise<IPost[]> => {
   throw Error('Erro ao listar as postagens');
 };
 
+const deletePost = async (id: number): Promise<void> => {
+  const { data } = await API_BASE_URL.delete(
+    `/posts/${JSON.stringify(id)}`
+  );
+
+  if (data) {
+    return data;
+  }
+
+  throw Error('Erro ao remover a postagem');
+};
+
 export const PostService = {
+  deletePost,
   getAllPosts,
   registerNewPost,
 };
