@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Form = styled.form`
   border: 1px solid ${({ theme }) => theme.colors.gray['550']};
   background-color: ${({ theme }) => theme.colors.gray['600']};
-  padding: 1.6rem;
+  padding: 2.4rem;
+  border-radius: 0.3rem;
 `;
 
 export const Header = styled.header`
@@ -14,10 +15,10 @@ export const Header = styled.header`
 
 export const Body = styled.div`
   margin-top: 1.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.2rem;
 
   textarea {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
   }
 `;
 
