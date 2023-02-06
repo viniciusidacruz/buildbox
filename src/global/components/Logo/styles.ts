@@ -15,6 +15,6 @@ export const Logo = styled(Link)`
 
   span:last-child {
     font-size: 1.6rem;
-    color: ${({ theme }) => theme.colors.gray['400']};
+    color: ${({ theme }) => theme.colors.gray['250']};
   }
 `;
