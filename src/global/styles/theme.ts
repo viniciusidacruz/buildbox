@@ -5,6 +5,7 @@ export const THEME_DEFAULT_TEMPLATE = {
     gray: {
       '200': '#9F9F9F',
       '300': '#7A7A7A',
+      '350': '#5F5F5F',
       '400': '#595959',
       '500': '#494949',
       '550': '#3B3B3B',
