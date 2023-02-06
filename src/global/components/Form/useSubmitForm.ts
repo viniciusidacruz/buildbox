@@ -34,8 +34,10 @@ export const useSubmitForm = () => {
       thumbnail: thumbnailUrl,
     };
 
-    PostService.registerNewPost(payload);
     setIsLoading(true);
+    PostService.registerNewPost(payload);
+    reset();
+    setThumbnailUrl(null);
   };
 
   const handleChangeFile = (event: ChangeEvent<HTMLInputElement>) => {
@@ -46,7 +48,10 @@ export const useSubmitForm = () => {
     }
   };
 
-  const handleClearAllFields = () => reset();
+  const handleClearAllFields = () => {
+    reset();
+    setThumbnailUrl(null);
+  };
 
   const handleDeleteThumbnail = () => setThumbnailUrl(null);
 
