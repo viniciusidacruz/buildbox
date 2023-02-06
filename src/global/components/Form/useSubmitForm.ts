@@ -11,12 +11,15 @@ import { PostService } from '@services/index';
 
 import { IData } from './types';
 import { initialValues } from './constants';
+import { usePosts } from '@/global/hooks/usePosts';
 
 export const useSubmitForm = () => {
   const [file, setFile] = useState<File | null>(null);
   const [thumbnailUrl, setThumbnailUrl] = useState<string | null>(
     null
   );
+
+  const { setIsLoading } = usePosts();
 
   const { handleSubmit, register, formState, reset } = useForm({
     defaultValues: initialValues,
@@ -32,6 +35,7 @@ export const useSubmitForm = () => {
     };
 
     PostService.registerNewPost(payload);
+    setIsLoading(true);
   };
 
   const handleChangeFile = (event: ChangeEvent<HTMLInputElement>) => {
