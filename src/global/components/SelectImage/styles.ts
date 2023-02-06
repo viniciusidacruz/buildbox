@@ -44,4 +44,5 @@ export const Thumbnail = styled.div<TThumbnailSource>`
   width: 88px;
   background-size: cover;
   border-radius: 50%;
+  background-position: center;
 `;
