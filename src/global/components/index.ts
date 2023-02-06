@@ -1,4 +1,5 @@
 export * from './Logo';
+export * from './Card';
 export * from './Form';
 export * from './Button';
 export * from './Header';
