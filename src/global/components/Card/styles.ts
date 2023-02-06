@@ -15,9 +15,15 @@ export const Header = styled.header`
   margin-bottom: 2.4rem;
 `;
 
+export const ButtonIcon = styled.button`
+  background: transparent;
+  border: none;
+`;
+
 export const CloseIcon = styled(AiOutlineCloseCircle)`
   color: ${({ theme }) => theme.colors.orange};
   font-size: 2rem;
+  cursor: pointer;
 `;
 
 export const Group = styled.div`

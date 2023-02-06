@@ -62,6 +62,7 @@ export function FormComponent() {
           title="Descartar"
           variant="outline"
           onClick={handleClearAllFields}
+          arial-label="Botão para resetar os campos do formúlario"
         />
 
         <ButtonComponent
@@ -70,6 +71,7 @@ export function FormComponent() {
           variant="contained"
           disabled={!isValid}
           loading={isSubmitting}
+          arial-label="Botão para enviar os dados do banco de dados"
         />
       </Styles.Footer>
     </Styles.Form>

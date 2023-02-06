@@ -10,7 +10,12 @@ export function CardComponent({ post }: IComponentParams) {
   return (
     <Styles.Card>
       <Styles.Header>
-        <Styles.CloseIcon onClick={() => handleRemovePost(post.id)} />
+        <Styles.ButtonIcon
+          aria-label="Botão de excluir a postagem"
+          onClick={() => handleRemovePost(post.id)}
+        >
+          <Styles.CloseIcon />
+        </Styles.ButtonIcon>
       </Styles.Header>
 
       <Styles.Group>

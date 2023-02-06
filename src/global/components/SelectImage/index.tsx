@@ -9,9 +9,13 @@ export const SelectImageComponent = forwardRef(
       return (
         <Styles.Header>
           <Styles.Thumbnail thumbnailSource={props.thumbnailSource} />
-          <Styles.IconTrash
+
+          <Styles.ButtonIcon
             onClick={() => props.onDeleteThumbnail()}
-          />
+            arial-label="Botão para remover o arquivo que foi feito o upload"
+          >
+            <Styles.IconTrash />
+          </Styles.ButtonIcon>
         </Styles.Header>
       );
     }

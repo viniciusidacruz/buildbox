@@ -21,6 +21,11 @@ export const SelectImage = styled.label`
 
 export const Input = styled.input``;
 
+export const ButtonIcon = styled.button`
+  background: transparent;
+  border: none;
+`;
+
 export const Icon = styled(RiGalleryFill)`
   font-size: 2.5rem;
   color: ${({ theme }) => theme.colors.gray['200']};
