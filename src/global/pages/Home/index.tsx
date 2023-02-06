@@ -1,17 +1,26 @@
 import { Fragment } from 'react';
 
-import { HeaderComponent, FormComponent } from '@components/index';
+import { FormComponent, HeaderComponent } from '@components/index';
 
-import { Container } from './styles';
+import * as Styles from './styles';
+import { useValidationListPosts } from './useValidationListPosts';
 
 export function HomePage() {
+  const { renderSectionPosts } = useValidationListPosts();
+
   return (
     <Fragment>
       <HeaderComponent />
 
-      <Container>
+      <Styles.Container>
         <FormComponent />
-      </Container>
+
+        <Styles.List>
+          <h2>Feed</h2>
+
+          {renderSectionPosts()}
+        </Styles.List>
+      </Styles.Container>
     </Fragment>
   );
 }
