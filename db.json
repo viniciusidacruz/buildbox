@@ -1,10 +1,3 @@
 {
-  "posts": [
-    {
-      "name": "teste",
-      "message": "teste",
-      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/sys-finance-dev.appspot.com/o/1675570234158dhd8g9lqunmmmyhxjg0i.png?alt=media&token=dd257c5a-8a2d-4534-b3d5-eecde4814bb2",
-      "id": 1
-    }
-  ]
+  "posts": []
 }
